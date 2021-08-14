@@ -1,0 +1,10 @@
+I:\Ramzi projects\Proobi 1.0\Proobi 1.0\bin\x86\Debug\Proobi 1.0.exe
+I:\Ramzi projects\Proobi 1.0\Proobi 1.0\bin\x86\Debug\Proobi 1.0.pdb
+I:\Ramzi projects\Proobi 1.0\Proobi 1.0\bin\x86\Debug\SQLite.NET.dll
+I:\Ramzi projects\Proobi 1.0\Proobi 1.0\bin\x86\Debug\System.Data.SQLite.dll
+I:\Ramzi projects\Proobi 1.0\Proobi 1.0\obj\x86\Debug\Proobi 1.0.csprojResolveAssemblyReference.cache
+I:\Ramzi projects\Proobi 1.0\Proobi 1.0\obj\x86\Debug\Proobi_1._0.Form1.resources
+I:\Ramzi projects\Proobi 1.0\Proobi 1.0\obj\x86\Debug\Proobi_1._0.Properties.Resources.resources
+I:\Ramzi projects\Proobi 1.0\Proobi 1.0\obj\x86\Debug\Proobi 1.0.csproj.GenerateResource.Cache
+I:\Ramzi projects\Proobi 1.0\Proobi 1.0\obj\x86\Debug\Proobi 1.0.exe
+I:\Ramzi projects\Proobi 1.0\Proobi 1.0\obj\x86\Debug\Proobi 1.0.pdb
