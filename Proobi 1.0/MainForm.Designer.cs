@@ -30,9 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.panelSteps1 = new System.Windows.Forms.Panel();
+            this.labelSteps1 = new System.Windows.Forms.Label();
+            this.textBoxSteps1 = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panelMinimize = new System.Windows.Forms.Panel();
             this.panelClose = new System.Windows.Forms.Panel();
@@ -41,49 +41,64 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelTop = new System.Windows.Forms.Panel();
             this.panelCode = new System.Windows.Forms.Panel();
-            this.panelLeft = new System.Windows.Forms.Panel();
             this.panelFunctions = new System.Windows.Forms.Panel();
-            this.panelMainCode = new System.Windows.Forms.Panel();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.panelSteps5 = new System.Windows.Forms.Panel();
+            this.labelSteps5 = new System.Windows.Forms.Label();
+            this.textBoxSteps5 = new System.Windows.Forms.TextBox();
+            this.panelSteps4 = new System.Windows.Forms.Panel();
+            this.labelSteps4 = new System.Windows.Forms.Label();
+            this.textBoxSteps4 = new System.Windows.Forms.TextBox();
+            this.panelSteps3 = new System.Windows.Forms.Panel();
+            this.labelSteps3 = new System.Windows.Forms.Label();
+            this.textBoxSteps3 = new System.Windows.Forms.TextBox();
+            this.panelSteps2 = new System.Windows.Forms.Panel();
+            this.labelSteps2 = new System.Windows.Forms.Label();
+            this.textBoxSteps2 = new System.Windows.Forms.TextBox();
+            this.panelBetween = new System.Windows.Forms.Panel();
             this.panelCode2 = new System.Windows.Forms.Panel();
-            this.panel1.SuspendLayout();
+            this.panelMainCode = new System.Windows.Forms.Panel();
+            this.panelLeft = new System.Windows.Forms.Panel();
+            this.panelSteps1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelCode.SuspendLayout();
             this.panelFunctions.SuspendLayout();
-            this.tabControl1.SuspendLayout();
+            this.panelSteps5.SuspendLayout();
+            this.panelSteps4.SuspendLayout();
+            this.panelSteps3.SuspendLayout();
+            this.panelSteps2.SuspendLayout();
             this.panelCode2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // panelSteps1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Gray;
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Location = new System.Drawing.Point(6, 31);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(135, 32);
-            this.panel1.TabIndex = 0;
-            this.panel1.Click += new System.EventHandler(this.panel1_Click);
+            this.panelSteps1.BackColor = System.Drawing.Color.Gray;
+            this.panelSteps1.Controls.Add(this.labelSteps1);
+            this.panelSteps1.Controls.Add(this.textBoxSteps1);
+            this.panelSteps1.Location = new System.Drawing.Point(10, 30);
+            this.panelSteps1.Name = "panelSteps1";
+            this.panelSteps1.Size = new System.Drawing.Size(135, 32);
+            this.panelSteps1.TabIndex = 0;
+            this.panelSteps1.Click += new System.EventHandler(this.panelSteps1_Click);
+            this.panelSteps1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelSteps1_MouseDown);
+            this.panelSteps1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panelSteps1_MouseUp);
             // 
-            // label1
+            // labelSteps1
             // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(7, 6);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "label1";
+            this.labelSteps1.AutoSize = true;
+            this.labelSteps1.ForeColor = System.Drawing.Color.White;
+            this.labelSteps1.Location = new System.Drawing.Point(7, 6);
+            this.labelSteps1.Name = "labelSteps1";
+            this.labelSteps1.Size = new System.Drawing.Size(34, 13);
+            this.labelSteps1.TabIndex = 1;
+            this.labelSteps1.Text = "Steps";
             // 
-            // textBox1
+            // textBoxSteps1
             // 
-            this.textBox1.Location = new System.Drawing.Point(48, 3);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(71, 20);
-            this.textBox1.TabIndex = 0;
+            this.textBoxSteps1.Location = new System.Drawing.Point(48, 3);
+            this.textBoxSteps1.Name = "textBoxSteps1";
+            this.textBoxSteps1.Size = new System.Drawing.Size(71, 20);
+            this.textBoxSteps1.TabIndex = 0;
             // 
             // panel2
             // 
@@ -154,6 +169,7 @@
             // 
             // panelCode
             // 
+            this.panelCode.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.panelCode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelCode.Controls.Add(this.panelFunctions);
             this.panelCode.Controls.Add(this.panelLeft);
@@ -163,70 +179,175 @@
             this.panelCode.Size = new System.Drawing.Size(495, 596);
             this.panelCode.TabIndex = 17;
             // 
-            // panelLeft
-            // 
-            this.panelLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelLeft.Location = new System.Drawing.Point(0, 0);
-            this.panelLeft.Name = "panelLeft";
-            this.panelLeft.Size = new System.Drawing.Size(59, 594);
-            this.panelLeft.TabIndex = 0;
-            // 
             // panelFunctions
             // 
-            this.panelFunctions.Controls.Add(this.panel1);
+            this.panelFunctions.BackColor = System.Drawing.Color.White;
+            this.panelFunctions.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelFunctions.Controls.Add(this.panelSteps5);
+            this.panelFunctions.Controls.Add(this.panelSteps4);
+            this.panelFunctions.Controls.Add(this.panelSteps3);
+            this.panelFunctions.Controls.Add(this.panelSteps2);
+            this.panelFunctions.Controls.Add(this.panelBetween);
+            this.panelFunctions.Controls.Add(this.panelSteps1);
             this.panelFunctions.Controls.Add(this.panelCode2);
-            this.panelFunctions.Controls.Add(this.tabControl1);
             this.panelFunctions.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelFunctions.Location = new System.Drawing.Point(59, 0);
             this.panelFunctions.Name = "panelFunctions";
             this.panelFunctions.Size = new System.Drawing.Size(435, 594);
             this.panelFunctions.TabIndex = 1;
             // 
-            // panelMainCode
+            // panelSteps5
             // 
-            this.panelMainCode.Location = new System.Drawing.Point(0, 0);
-            this.panelMainCode.Name = "panelMainCode";
-            this.panelMainCode.Size = new System.Drawing.Size(311, 700);
-            this.panelMainCode.TabIndex = 3;
+            this.panelSteps5.BackColor = System.Drawing.Color.Gray;
+            this.panelSteps5.Controls.Add(this.labelSteps5);
+            this.panelSteps5.Controls.Add(this.textBoxSteps5);
+            this.panelSteps5.Location = new System.Drawing.Point(10, 236);
+            this.panelSteps5.Name = "panelSteps5";
+            this.panelSteps5.Size = new System.Drawing.Size(135, 32);
+            this.panelSteps5.TabIndex = 4;
+            this.panelSteps5.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelSteps5_MouseDown);
+            this.panelSteps5.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panelSteps5_MouseUp);
             // 
-            // tabControl1
+            // labelSteps5
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(16, 91);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(200, 100);
-            this.tabControl1.TabIndex = 18;
+            this.labelSteps5.AutoSize = true;
+            this.labelSteps5.ForeColor = System.Drawing.Color.White;
+            this.labelSteps5.Location = new System.Drawing.Point(7, 6);
+            this.labelSteps5.Name = "labelSteps5";
+            this.labelSteps5.Size = new System.Drawing.Size(34, 13);
+            this.labelSteps5.TabIndex = 1;
+            this.labelSteps5.Text = "Steps";
             // 
-            // tabPage1
+            // textBoxSteps5
             // 
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(192, 74);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "tabPage1";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.textBoxSteps5.Location = new System.Drawing.Point(48, 3);
+            this.textBoxSteps5.Name = "textBoxSteps5";
+            this.textBoxSteps5.Size = new System.Drawing.Size(71, 20);
+            this.textBoxSteps5.TabIndex = 0;
             // 
-            // tabPage2
+            // panelSteps4
             // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(192, 74);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.panelSteps4.BackColor = System.Drawing.Color.Gray;
+            this.panelSteps4.Controls.Add(this.labelSteps4);
+            this.panelSteps4.Controls.Add(this.textBoxSteps4);
+            this.panelSteps4.Location = new System.Drawing.Point(10, 188);
+            this.panelSteps4.Name = "panelSteps4";
+            this.panelSteps4.Size = new System.Drawing.Size(135, 32);
+            this.panelSteps4.TabIndex = 4;
+            this.panelSteps4.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelSteps4_MouseDown);
+            this.panelSteps4.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panelSteps4_MouseUp);
+            // 
+            // labelSteps4
+            // 
+            this.labelSteps4.AutoSize = true;
+            this.labelSteps4.ForeColor = System.Drawing.Color.White;
+            this.labelSteps4.Location = new System.Drawing.Point(7, 6);
+            this.labelSteps4.Name = "labelSteps4";
+            this.labelSteps4.Size = new System.Drawing.Size(34, 13);
+            this.labelSteps4.TabIndex = 1;
+            this.labelSteps4.Text = "Steps";
+            // 
+            // textBoxSteps4
+            // 
+            this.textBoxSteps4.Location = new System.Drawing.Point(48, 3);
+            this.textBoxSteps4.Name = "textBoxSteps4";
+            this.textBoxSteps4.Size = new System.Drawing.Size(71, 20);
+            this.textBoxSteps4.TabIndex = 0;
+            // 
+            // panelSteps3
+            // 
+            this.panelSteps3.BackColor = System.Drawing.Color.Gray;
+            this.panelSteps3.Controls.Add(this.labelSteps3);
+            this.panelSteps3.Controls.Add(this.textBoxSteps3);
+            this.panelSteps3.Location = new System.Drawing.Point(10, 136);
+            this.panelSteps3.Name = "panelSteps3";
+            this.panelSteps3.Size = new System.Drawing.Size(135, 32);
+            this.panelSteps3.TabIndex = 4;
+            this.panelSteps3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelSteps3_MouseDown);
+            this.panelSteps3.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panelSteps3_MouseUp);
+            // 
+            // labelSteps3
+            // 
+            this.labelSteps3.AutoSize = true;
+            this.labelSteps3.ForeColor = System.Drawing.Color.White;
+            this.labelSteps3.Location = new System.Drawing.Point(7, 6);
+            this.labelSteps3.Name = "labelSteps3";
+            this.labelSteps3.Size = new System.Drawing.Size(34, 13);
+            this.labelSteps3.TabIndex = 1;
+            this.labelSteps3.Text = "Steps";
+            // 
+            // textBoxSteps3
+            // 
+            this.textBoxSteps3.Location = new System.Drawing.Point(48, 3);
+            this.textBoxSteps3.Name = "textBoxSteps3";
+            this.textBoxSteps3.Size = new System.Drawing.Size(71, 20);
+            this.textBoxSteps3.TabIndex = 0;
+            // 
+            // panelSteps2
+            // 
+            this.panelSteps2.BackColor = System.Drawing.Color.Gray;
+            this.panelSteps2.Controls.Add(this.labelSteps2);
+            this.panelSteps2.Controls.Add(this.textBoxSteps2);
+            this.panelSteps2.Location = new System.Drawing.Point(10, 83);
+            this.panelSteps2.Name = "panelSteps2";
+            this.panelSteps2.Size = new System.Drawing.Size(135, 32);
+            this.panelSteps2.TabIndex = 3;
+            this.panelSteps2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelSteps2_MouseDown);
+            this.panelSteps2.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panelSteps2_MouseUp);
+            // 
+            // labelSteps2
+            // 
+            this.labelSteps2.AutoSize = true;
+            this.labelSteps2.ForeColor = System.Drawing.Color.White;
+            this.labelSteps2.Location = new System.Drawing.Point(7, 6);
+            this.labelSteps2.Name = "labelSteps2";
+            this.labelSteps2.Size = new System.Drawing.Size(34, 13);
+            this.labelSteps2.TabIndex = 1;
+            this.labelSteps2.Text = "Steps";
+            // 
+            // textBoxSteps2
+            // 
+            this.textBoxSteps2.Location = new System.Drawing.Point(48, 3);
+            this.textBoxSteps2.Name = "textBoxSteps2";
+            this.textBoxSteps2.Size = new System.Drawing.Size(71, 20);
+            this.textBoxSteps2.TabIndex = 0;
+            // 
+            // panelBetween
+            // 
+            this.panelBetween.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panelBetween.Location = new System.Drawing.Point(157, 0);
+            this.panelBetween.Name = "panelBetween";
+            this.panelBetween.Size = new System.Drawing.Size(1, 592);
+            this.panelBetween.TabIndex = 2;
             // 
             // panelCode2
             // 
             this.panelCode2.AutoScroll = true;
+            this.panelCode2.BackColor = System.Drawing.Color.White;
+            this.panelCode2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelCode2.Controls.Add(this.panelMainCode);
-            this.panelCode2.Location = new System.Drawing.Point(147, 5);
+            this.panelCode2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panelCode2.Location = new System.Drawing.Point(158, 0);
             this.panelCode2.Name = "panelCode2";
-            this.panelCode2.Size = new System.Drawing.Size(275, 594);
+            this.panelCode2.Size = new System.Drawing.Size(275, 592);
             this.panelCode2.TabIndex = 2;
+            // 
+            // panelMainCode
+            // 
+            this.panelMainCode.BackColor = System.Drawing.Color.White;
+            this.panelMainCode.Location = new System.Drawing.Point(0, 0);
+            this.panelMainCode.Name = "panelMainCode";
+            this.panelMainCode.Size = new System.Drawing.Size(295, 700);
+            this.panelMainCode.TabIndex = 3;
+            // 
+            // panelLeft
+            // 
+            this.panelLeft.BackColor = System.Drawing.Color.White;
+            this.panelLeft.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelLeft.Location = new System.Drawing.Point(0, 0);
+            this.panelLeft.Name = "panelLeft";
+            this.panelLeft.Size = new System.Drawing.Size(59, 594);
+            this.panelLeft.TabIndex = 0;
             // 
             // MainForm
             // 
@@ -241,13 +362,20 @@
             this.Name = "MainForm";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.MainForm_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.panelSteps1.ResumeLayout(false);
+            this.panelSteps1.PerformLayout();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelCode.ResumeLayout(false);
             this.panelFunctions.ResumeLayout(false);
-            this.tabControl1.ResumeLayout(false);
+            this.panelSteps5.ResumeLayout(false);
+            this.panelSteps5.PerformLayout();
+            this.panelSteps4.ResumeLayout(false);
+            this.panelSteps4.PerformLayout();
+            this.panelSteps3.ResumeLayout(false);
+            this.panelSteps3.PerformLayout();
+            this.panelSteps2.ResumeLayout(false);
+            this.panelSteps2.PerformLayout();
             this.panelCode2.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -255,9 +383,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panelSteps1;
+        private System.Windows.Forms.TextBox textBoxSteps1;
+        private System.Windows.Forms.Label labelSteps1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panelMinimize;
         private System.Windows.Forms.Panel panelClose;
@@ -269,10 +397,20 @@
         private System.Windows.Forms.Panel panelLeft;
         private System.Windows.Forms.Panel panelFunctions;
         private System.Windows.Forms.Panel panelMainCode;
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Panel panelCode2;
+        private System.Windows.Forms.Panel panelBetween;
+        private System.Windows.Forms.Panel panelSteps2;
+        private System.Windows.Forms.Label labelSteps2;
+        private System.Windows.Forms.TextBox textBoxSteps2;
+        private System.Windows.Forms.Panel panelSteps5;
+        private System.Windows.Forms.Label labelSteps5;
+        private System.Windows.Forms.TextBox textBoxSteps5;
+        private System.Windows.Forms.Panel panelSteps4;
+        private System.Windows.Forms.Label labelSteps4;
+        private System.Windows.Forms.TextBox textBoxSteps4;
+        private System.Windows.Forms.Panel panelSteps3;
+        private System.Windows.Forms.Label labelSteps3;
+        private System.Windows.Forms.TextBox textBoxSteps3;
     }
 }
 
